@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Renaissance Period</title>
+  <link href="/Integrative Programming and Technologies/FINALS_GROUP2_2/style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <style>
+    .art-period {
+      margin: 20px 10% 0px 10%;
+      padding: 20px;
+      text-align: center;
+      background-color: #323723;
+    }
+    .art-period h1 {
+      font-size: 24px;
+      font-weight: bold;
+      color: #a67c52;
+    }
+    .art-period p {
+      color: #FFFFFF;
+      padding: 20px;
+      border-radius: 5px;
+    }
+    .note {
+      margin-top: 10px;
+      margin-left: 10%;
+    }
+    .gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    .gallery-item {
+      margin: 10px;
+      padding: 10px;
+      border-radius: 5px;
+      text-align: center;
+      width: 30%;
+    }
+    .gallery-item input {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      transition: transform .2s;
+    }
+    .gallery-item input:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+    .gallery-item h3 {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 10px 0 5px;
+    }
+    .gallery-item p {
+      font-size: 14px;
+      color: #555;
+    }
+    .modal h1, h4{
+				color: white;
+		}
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm p-3 navbar-dark" id="mynavbar">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img src="../Assets/logotest.png"></a>
+        <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../categorySelection.html">Collection</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../news.html">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../events.html">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../schedule.html">Schedule</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../about.html">About</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+            <input class="form-control me-2" type="text" placeholder="Search">
+            <button class="btn btn-primary" type="button">Search</button>
+            </form>
+        </div>
+    </div>
+  </nav>
+  
+  <!-- main content -->
+  <div class="art-period">
+    <h1>RENAISSANCE</h1>
+    <p>Lorem ipsum dolor sit amet. Quo tempora fugiat sit explicabo dignissimos eum culpa obcaecati 33 deserunt voluptatibus aut esse porro.</p>
+  </div>
+  <div class="note">Note:</div>
+  <!-- gallery -->
+  <div class="gallery">
+    <div class="gallery-item">
+      <input type="image" src="../Assets/Thumbnails/gallery_renaissance_thumbnail1.jpg" data-bs-toggle="modal" data-bs-target="#modal1">
+      <h3>The Garden of Earthly Delights</h3>
+      <p>by Hieronymus Bosch</p>
+    </div>
+    <div class="gallery-item">
+      <input type="image" src="../Assets/Thumbnails/gallery_renaissance_thumbnail2.jpg" data-bs-toggle="modal" data-bs-target="#modal2">
+      <h3>Book of Hours</h3>
+      <p>by Jean Fouquet</p>
+    </div>
+    <div class="gallery-item">
+      <input type="image" src="../Assets/Thumbnails/gallery_renaissance_thumbnail3.jpg" data-bs-toggle="modal" data-bs-target="#modal3">
+      <h3>Hunting near Hartenfels Castle</h3>
+      <p>by Lucas Cranach the Elder</p>
+    </div>
+    <div class="gallery-item">
+      <input type="image" src="../Assets/Thumbnails/gallery_renaissance_thumbnail4.jpg" data-bs-toggle="modal" data-bs-target="#modal4">
+      <h3>The Arnolfini Portrait</h3>
+      <p>by Jan Van Eyck</p>
+    </div>
+    <div class="gallery-item">
+      <input type="image" src="../Assets/Thumbnails/gallery_renaissance_thumbnail5.jpg" data-bs-toggle="modal" data-bs-target="#modal5">
+      <h3>The Portinari Tryptich</h3>
+      <p>by Hugo van der Goes</p>
+    </div>
+  </div>
+
+  <div class="modal" id="modal1">
+    <div class="modal-dialog modal-l center">
+      <div class="modal-content center border border-rounded">
+        <img class="img-fluid" src="../Assets/FullRes/renaissance_art1.jpg">
+      </div>
+      <h1>The Garden of Earthly Delights</h1>
+      <h4>by Hieronymus Bosch</h4>
+    </div>
+  </div> <!--modal end-->
+
+  <div class="modal" id="modal2">
+    <div class="modal-dialog modal-l center">
+      <div class="modal-content center border border-rounded">
+        <img class="img-fluid" src="../Assets/FullRes/renaissance_art2.jpg">
+      </div>
+      <h1>Book of Hours</h1>
+      <h4>by Jean Fouquet</h4>
+    </div>
+  </div>
+
+  <div class="modal" id="modal3">
+    <div class="modal-dialog modal-l center">
+      <div class="modal-content center border border-rounded">
+        <img class="img-fluid" src="../Assets/FullRes/renaissance_art3.jpg">
+      </div>
+      <h1>Hunting near Hartenfels Castle</h1>
+      <h4>by Lucas Cranach the Elder</h4>
+    </div>
+  </div>
+
+  <div class="modal" id="modal4">
+    <div class="modal-dialog modal-l center">
+      <div class="modal-content center border border-rounded">
+        <img class="img-fluid" src="../Assets/FullRes/renaissance_art4.jpg">
+      </div>
+      <h1>The Arnolfini Portrait</h1>
+      <h4>by Jan Van Eyck</h4>
+    </div>
+  </div>
+
+  <div class="modal" id="modal5">
+    <div class="modal-dialog modal-l center">
+      <div class="modal-content center border border-rounded">
+        <img class="img-fluid" src="../Assets/FullRes/renaissance_art5.jpg">
+      </div>
+      <h1>The Portinari Tryptich</h1>
+      <h4>by Hugo van der Goes</h4>
+    </div>
+  </div>
+  
+
+</body>
