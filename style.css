@@ -1,0 +1,373 @@
+@font-face {
+	font-family: "Libre Reg";
+	src: url(Fonts/AbhayaLibre-Regular.ttf);
+}
+@font-face {
+	font-family: "Libre Bold";
+	src: url(Fonts/AbhayaLibre-Bold.ttf);
+}
+@font-face {
+	font-family: "Boldest Romance";
+	src: url(Fonts/Boldest-Romance.otf);
+}
+
+/*html {
+    height: 100%;
+    width: 100%;
+}*/
+
+body,
+.row {
+	background-color: #c8ae95;
+	font-family: "Libre Reg";
+	font-size: 18px;
+}
+
+#mynavbar {
+	background-color: #3a2c1f;
+	font-size: 20px;
+}
+
+/*#modalpicture{
+    width: ;
+    height: ;
+}*/
+
+.center {
+	display: block;
+	text-align: center;
+	margin: auto;
+}
+
+.headerLogo {
+	background-color: #bf0d28;
+	text-align: left;
+	float: left;
+	width: 33.33%;
+	font-size: 200%;
+}
+
+.header img {
+	padding: 20px;
+	width: 40%;
+}
+
+.headerButtons {
+	background-color: #81381f;
+	width: 66.66%;
+	font-size: 200%;
+	overflow: auto;
+}
+
+.buttons {
+	width: 33%;
+	top: 150px;
+	padding: 50px;
+	float: right;
+}
+
+.buttons td {
+	padding: 110px 0 0 70px;
+}
+
+.flexbox {
+	width: 100%;
+}
+
+.main-header {
+	background-color: red;
+}
+
+.home-buttons {
+	display: flex;
+	flex-direction: row;
+}
+
+.dividerLabel {
+	padding: 5px 10px;
+	font-family: "Boldest Romance";
+	font-size: 4vh;
+	letter-spacing: 2px;
+	margin-top: 3vh;
+	margin-bottom: 2vh;
+}
+
+.pageLabel,
+.textInsert h4 {
+	font-family: "Boldest Romance";
+}
+
+.eventLabel {
+	font-family: "Boldest Romance";
+	font-weight: lighter;
+}
+
+#mynavbar {
+	font-family: "Libre Reg";
+	font-size: 20pt;
+}
+
+#mynavbar li {
+	padding-inline: 5px;
+}
+
+.event {
+	font-family: "Libre Reg";
+}
+
+.card,
+.card-title {
+	font-family: "Libre Reg";
+}
+
+.articles {
+	position: relative;
+	text-align: center;
+	color: black;
+	margin-top: 50px;
+	width: 100vw;
+	align-items: center;
+	z-index: 0;
+}
+
+.leftcont {
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	float: left;
+}
+
+.rightcont {
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	float: right;
+}
+
+.form td {
+	padding: 10px;
+}
+
+.accordion {
+	background-color: #eee;
+	color: #444;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+	transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+	background-color: #ccc;
+}
+
+.panel {
+	padding: 0 18px;
+	display: none;
+	background-color: white;
+	overflow: hidden;
+}
+
+.mySlides {
+	display: none;
+}
+
+.mySlides2 {
+	display: none;
+}
+
+.news-title {
+	padding: 10px;
+	font-size: 48px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 0px;
+}
+.news-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 20px;
+}
+.news-item {
+	background-color: #81381f;
+	color: #000000;
+	width: 30%;
+	height: 100%;
+	margin: 10px;
+	padding: 0;
+	box-sizing: border-box;
+	overflow: hidden;
+	position: relative;
+}
+.news-item img {
+	width: 100%;
+	height: 20%;
+	object-fit: cover;
+	display: block;
+}
+.news-item .content {
+	padding: 20px;
+}
+.news-item h2 {
+	margin-top: 10px;
+	font-size: 100%;
+	font-weight: bold;
+	text-align: center;
+}
+.news-item p {
+	margin: 5px 0;
+}
+.news-item .date {
+	font-size: 150%;
+	font-weight: bold;
+	position: absolute;
+	top: 0px;
+	left: 10px;
+	padding: 5px;
+	color: #000000;
+	text-shadow: 0 0 3px #ffffff;
+}
+
+.textHolder {
+	margin-top: 4vh;
+	margin-bottom: 3vh;
+}
+
+/*NEWS SECTION*/
+.textHolder {
+	font-family: "Boldest Romance";
+	letter-spacing: 1.5px;
+}
+
+/* SCHEDULE SECTION */
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+input[type="number"],
+select,
+textarea,
+.textFieldForms {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+	resize: vertical;
+}
+
+.freqAskedQuestions {
+	color: white;
+	margin-top: -1vh;
+	margin-bottom: -1vh;
+}
+
+
+/*FOOTER*/
+.footerHeaders{
+	color:#fff;
+	font-size:21px;
+	text-transform: uppercase;
+	margin-top:5px;
+	letter-spacing:2px
+  }
+  .topFooter li {
+	padding: 10px;
+  }
+  .topFooter{
+	display:flex;
+	text-align: left;    
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #26272b;
+	padding:45px 0 20px;
+	padding-bottom: 80px;
+	font-size:20px;
+	line-height:24px;
+	color:#737373;
+	font-family: "Lucida Console", sans-serif;
+  }
+  .topFooter h1{
+	padding:40px;
+	text-align: center;
+	color: #fff;
+  }
+  .topFooter table{
+	
+	margin-left: auto;
+	margin-right: auto;
+  }
+  
+  .topFooter a,.topFooter a:active,.topFooter a:focus,.topFooter a:visited,.topFooter a:hover{
+	color:#737373;
+	text-decoration: none;
+  }
+  .topFooter a:hover{
+	color:#29aafe;
+  }
+  
+  .topFooter .fa {
+	padding: 10px;
+	font-size: 20px;
+	width: 20px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+	border-radius: 50%;
+	background-color:#33353d;
+	color:#737373;
+	transition: transform .2s;
+  }
+  .topFooter .fa-facebook:hover {
+	background: #3B5998;
+	color:white;
+	transform: scale(1.1); 
+  }
+  .topFooter .fa-twitter:hover {
+	background: #55ACEE;
+	color: white;
+	transform: scale(1.1); 
+  }
+
+  .topFooter .fa-google:hover {
+	background: #dd4b39;
+	color: white;
+	transform: scale(1.1); 
+  }
+
+  .topFooter .fa-linkedin:hover {
+	background: #007bb5;
+	color: white;
+	transform: scale(1.1); 
+  }
+
+  .topFooter .fa-youtube:hover {
+	background: #bb0000;
+	color: white;
+	transform: scale(1.1); 
+  }
+  .topFooter hr{
+	margin-left: auto;
+   
+  }
+  .bottomFooter{
+	display:flex;
+	text-align: left;    
+	padding: 20px;
+	width: 100%;
+	background-color: black;
+	font-size:20px;
+	line-height:24px;
+	color:#737373;
+	font-family: "Lucida Console", sans-serif;
+  }
