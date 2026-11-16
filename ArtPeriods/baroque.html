@@ -4,7 +4,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
 		<title>Baroque Period</title>
-		<link href="/Integrative Programming and Technologies/FINALS_GROUP2_2/style.css" rel="stylesheet" type="text/css" />
+		<link href="../style.css" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -12,6 +12,9 @@
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 
 		<style>
+			body {
+				background-color: #c8ae95;
+			  }
 			.art-period {
 				margin: 20px 10% 0px 10%;
 				padding: 20px;
@@ -45,11 +48,6 @@
 				text-align: center;
 				width: 30%;
 			}
-			/*
-    Change gallery-item img & gallery-item:hover
-    into input and input:hover in the other pages
-    muchos graces -love, Marc
-    */
 			.gallery-item input {
 				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 				width: 100%;
@@ -72,6 +70,11 @@
 			}
 			.modal h1, h4{
 				color: white;
+			}
+			.description-text-pleasework{
+				font-family: "Libre-Reg";
+				font-size: 18px;
+				letter-spacing: 1px;
 			}
 		</style>
 	</head>
@@ -103,18 +106,17 @@
 					</ul>
 					<form class="d-flex">
 						<input class="form-control me-2" type="text" placeholder="Search" />
-						<button class="btn btn-primary" type="button">Search</button>
+						<button class="btn" type="button" id="Search">Search</button>
 					</form>
 				</div>
 			</div>
 		</nav>
 
 		<!-- main content -->
-		<div class="art-period">
-			<h1>BAROQUE</h1>
-			<p>Lorem ipsum dolor sit amet. Quo tempora fugiat sit explicabo dignissimos eum culpa obcaecati 33 deserunt voluptatibus aut esse porro.</p>
+		<div class="art-period textAbout">
+			<h1 class="contentLabel">BAROQUE</h1>
+			<p class="description-text-pleasework">Baroque is an artistic movement that developed in Italy, in Rome, in the 17th century in reaction to Mannerism that dominated the late Italian Renaissance. This movement was encouraged by the Catholic Church that sought to return to the tradition and spirituality the Church promoted with the Counter Reformation.</p>
 		</div>
-		<div class="note">Note:</div>
 		<!-- gallery -->
 		<div class="gallery">
 			<div class="gallery-item">
@@ -194,6 +196,71 @@
 				<h4>by Peter Paul Rubens</h4>
 			</div>
 		</div>
-	
+
+		<br><br><br>
+    <!--footer-->
+    <div class="footer">
+        <div class="topFooter">
+        <table>
+          <tr><td colspan="4"><h1 class="textAbout">Galerie d'Art©</h1></td></tr>
+          <tr>
+             <td>
+               <ul style="list-style-type:none;" class="textAbout">
+                  <li><div class="footerHeaders textAbout"><b>ABOUT US</b></li>
+                  <li><a href="about.html">About Galerie d'Art</a></li>
+                  <li><a href="#">Art Blogger</a></li>
+                  <li><a href="#">Expert FAQs </a></li>
+                  <li><a href="categorySelection.html">Displays</a></li>
+                  <li><a href="#">Address</a></li>
+                  <li><a href="#availability">Working Hours</a></li>
+
+               </ul>
+             </td>
+              <td>
+               <ul style="list-style-type:none;" class="textAbout">
+                  <li><div class="footerHeaders textAbout"><b>HELP & SUPPORT</b></li>
+                  <li><a href="#">Building Info</a></li>
+                  <li><a href="#">Rules and Regulation</a></li>
+                  <li><a href="#">Refund</a></li>
+                  <li><a href="#">How To Book Tour</a></li>
+                  <li><a href="categorySelection.html">Art Sections</a></li>
+                  <li><a href="#">Museum Guide</a></li>
+
+
+               </ul>
+             </td>
+            <td>
+               <ul style="list-style-type:none;" class="textAbout">
+                  <li><div class="footerHeaders textAbout"><b>CUSTOMER CARE</b></li>
+                  <li><a href="#">Payment Method</a></li>
+                  <li><a href="#">Bonus Point</a></li>
+                  <li><a href="#">VIP Galerie d'Art</a></li>
+                  <li> &nbsp</li>
+                  <li> &nbsp</li>
+                  <li> &nbsp</li>
+               </ul>
+             </td>
+            <td>
+               <ul style="list-style-type:none;" class="textAbout">
+                  <li><div class="footerHeaders textAbout"><b>CONTACT US</b></li>
+                  <li>Mobile: <a href="#">(+63)915-7812-713</a></li>
+                  <li>Telephone: <a href="#">(02) 3478-9863</a></li>
+                  <li>Email: <a href="#">galeriedart@maile.com.ph</a></li>
+                  <li><div class="footerHeaders textAbout"><b>FOLLOW US</b></li>
+                  <li class="social_icons"><a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+                  <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+                  <a class="google" href="#"><i class="fa fa-google"></i></a>
+                  <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                  <a class="youtube" href="#"><i class="fa fa-youtube"></i></a></li>
+               </ul>
+             </td>
+           </tr>
+        </table>
+        </div>
+        <div class="bottomFooter">
+          <p class="textAbout">Copyright ©2017&nbsp<span style="color:#B96E08">Galerie d'Art©</span></p></div>
+        </div>
+      </div>
+
 	</body>
 </html>
