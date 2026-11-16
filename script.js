@@ -3,7 +3,7 @@ var i;
 
 for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function() {
-        
+
         this.classList.toggle("active")
         var panel = this.nextElementSibling;
         if (panel.style.display === "block") {
@@ -17,31 +17,23 @@ for (i = 0; i < acc.length; i++) {
 var myIndex = 0;
 var myIndex2 = 0;
 carousel();
-carousel2();
+
 
 function carousel() {
     var i;
     var x = document.getElementsByClassName("mySlides");
+    var y = document.getElementsByClassName("mySlides2");
     for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";  
-    }
+        x[i].style.display = "none";
+        y[i].style.display = "none";
+        }
     myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    y[myIndex-1].style.display = "block"
     setTimeout(carousel, 2000);
 }
 
-function carousel2() {
-    var i;
-    var x = document.getElementsByClassName("mySlides2");
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";  
-    }
-    myIndex2++;
-    if (myIndex2 > x.length) {myIndex2 = 1}    
-    x[myIndex2-1].style.display = "block";  
-    setTimeout(carousel, 2000);
-}
 
 document.addEventListener('DOMContentLoaded', function () {
     var calendarEl = document.getElementById('calendar');
@@ -62,11 +54,25 @@ document.addEventListener('DOMContentLoaded', function () {
           start  : '2024-05-01',
           end    : '2024-07-01',
           backgroundColor : "#3A2C1F",
-          borderColor : "#3A2C1F"
+          borderColor : "#3A2C1F",
+          display: "background"
+        },
 
+        {
+          title  : 'ACCEPTING ART ENTRIES',
+          start  : '2024-05-01',
+          backgroundColor : "#3A2C1F",
+          borderColor : "#3a2c1f"
+        },
+
+        {
+          title  : 'END OF ACCEPTING',
+          start  : '2024-06-30',
+          backgroundColor : "#3A2C1F",
+          borderColor : "#3a2c1f"
         }
       ]
     });
-  
+
     calendar.render();
   });

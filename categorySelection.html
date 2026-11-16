@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Category Selecion</title>
+    <title>Category Selection</title>
     <link href="style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -13,15 +13,17 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
     <style>
-        
-        td{
+        body {
             background-color: #C8AE95;
         }
-        h1{
+        .iLoveCSS{
+            background-color: #C8AE95;
+        }
+        /*h1{
             text-align: center;
             font-size: 500%;
             padding:100px;
-        }
+        }*/
         .choices table{
             background-color: #74736d;
             width: 100%
@@ -43,7 +45,7 @@
             cursor: pointer;
         }
     </style>
-    
+
 </head>
 
 <body>
@@ -73,31 +75,96 @@
                 </ul>
                 <form class="d-flex">
                 <input class="form-control me-2" type="text" placeholder="Search">
-                <button class="btn btn-primary" type="button">Search</button>
+                <button class="btn" type="button" id="Search">Search</button>
                 </form>
             </div>
         </div>
       </nav>
-    
-    <h1 class = "pageLabel">Time Periods</h1>
+
+    <h1 class = "pageLabel" style="text-align: center;font-size: 500%;padding:100px;">Time Periods</h1>
 
     <!--I suggest to replace img with divs instead (using background-image to be able to overlay text on it-->
     <div class="choices">
-        <table >
-        <tr>
+        <table>
+        <tr class="iLoveCSS">
             <td><a href="ArtPeriods/medieval.html"><img src="Assets/Thumbnails/Collection_Medieval.png"></a></td>
             <td><a href="ArtPeriods/renaissance.html"><img src="Assets/Thumbnails/Collection_Renaissance.png"></a></td>
         </tr>
-        <tr>
+        <tr class="iLoveCSS">
             <td><a href="ArtPeriods/baroque.html"><img src="Assets/Thumbnails/Collection_Baroque.png"></a></td>
             <td><a href="ArtPeriods/rococo.html"><img src="Assets/Thumbnails/Collection_Rococo.png"></a></td>
         </tr>
-        <tr>
+        <tr class="iLoveCSS">
             <td><a href="ArtPeriods/neoclassicism.html"><img src="Assets/Thumbnails/Collection_Neoclass.png"></a></td>
             <td><a href="ArtPeriods/romanticism.html"><img src="Assets/Thumbnails/Collection_Roman.png"></a></td>
         </tr>
-            
+
         </table>
-        
+
     </div>
+
+    <br><br><br>
+    <!--footer-->
+    <div class="footer">
+        <div class="topFooter">
+        <table>
+          <tr><td colspan="4"><h1 class="textAbout">Galerie d'Art©</h1></td></tr>
+          <tr>
+             <td>
+               <ul style="list-style-type:none;" class="textAbout">
+                  <li><div class="footerHeaders textAbout"><b>ABOUT US</b></li>
+                  <li><a href="about.html">About Galerie d'Art</a></li>
+                  <li><a href="#">Art Blogger</a></li>
+                  <li><a href="#">Expert FAQs </a></li>
+                  <li><a href="categorySelection.html">Displays</a></li>
+                  <li><a href="#">Address</a></li>
+                  <li><a href="#availability">Working Hours</a></li>
+
+               </ul>
+             </td>
+              <td>
+               <ul style="list-style-type:none;" class="textAbout">
+                  <li><div class="footerHeaders textAbout"><b>HELP & SUPPORT</b></li>
+                  <li><a href="#">Building Info</a></li>
+                  <li><a href="#">Rules and Regulation</a></li>
+                  <li><a href="#">Refund</a></li>
+                  <li><a href="#">How To Book Tour</a></li>
+                  <li><a href="categorySelection.html">Art Sections</a></li>
+                  <li><a href="#">Museum Guide</a></li>
+
+
+               </ul>
+             </td>
+            <td>
+               <ul style="list-style-type:none;" class="textAbout">
+                  <li><div class="footerHeaders textAbout"><b>CUSTOMER CARE</b></li>
+                  <li><a href="#">Payment Method</a></li>
+                  <li><a href="#">Bonus Point</a></li>
+                  <li><a href="#">VIP Galerie d'Art</a></li>
+                  <li> &nbsp</li>
+                  <li> &nbsp</li>
+                  <li> &nbsp</li>
+               </ul>
+             </td>
+            <td>
+               <ul style="list-style-type:none;" class="textAbout">
+                  <li><div class="footerHeaders textAbout"><b>CONTACT US</b></li>
+                  <li>Mobile: <a href="#">(+63)915-7812-713</a></li>
+                  <li>Telephone: <a href="#">(02) 3478-9863</a></li>
+                  <li>Email: <a href="#">galeriedart@maile.com.ph</a></li>
+                  <li><div class="footerHeaders textAbout"><b>FOLLOW US</b></li>
+                  <li class="social_icons"><a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+                  <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+                  <a class="google" href="#"><i class="fa fa-google"></i></a>
+                  <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                  <a class="youtube" href="#"><i class="fa fa-youtube"></i></a></li>
+               </ul>
+             </td>
+           </tr>
+        </table>
+        </div>
+        <div class="bottomFooter">
+          <p class="textAbout">Copyright ©2017&nbsp<span style="color:#B96E08">Galerie d'Art©</span></p></div>
+        </div>
+      </div>
 </body>

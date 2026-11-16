@@ -10,28 +10,24 @@
 	font-family: "Boldest Romance";
 	src: url(Fonts/Boldest-Romance.otf);
 }
-
-/*html {
-    height: 100%;
-    width: 100%;
-}*/
+@font-face {
+	font-family: "Betty Noir";
+	src: url(Fonts/bettynoir.ttf);
+}
 
 body,
 .row {
 	background-color: #c8ae95;
 	font-family: "Libre Reg";
 	font-size: 18px;
+	margin: 0;
+	width: 100%;
 }
 
 #mynavbar {
 	background-color: #3a2c1f;
 	font-size: 20px;
 }
-
-/*#modalpicture{
-    width: ;
-    height: ;
-}*/
 
 .center {
 	display: block;
@@ -83,23 +79,38 @@ body,
 	flex-direction: row;
 }
 
+
 .dividerLabel {
 	padding: 5px 10px;
-	font-family: "Boldest Romance";
-	font-size: 4vh;
+	font-family: "Betty Noir";
+	font-size: 6vh;
 	letter-spacing: 2px;
 	margin-top: 3vh;
 	margin-bottom: 2vh;
 }
 
 .pageLabel,
-.textInsert h4 {
-	font-family: "Boldest Romance";
+.textInsert h4, .textInsert h1, .textInsert h3, .contentLabel {
+	font-family: "Betty Noir";
+
+}
+
+.textInsert a{
+	font-size: 20px;
 }
 
 .eventLabel {
-	font-family: "Boldest Romance";
+	font-family: "Betty Noir";
 	font-weight: lighter;
+}
+
+.eventTextContain{
+	margin-left: 3.5vw;
+}
+
+.name{
+	font-weight: bold;
+	font-size: 1.2em;
 }
 
 #mynavbar {
@@ -111,13 +122,19 @@ body,
 	padding-inline: 5px;
 }
 
+.calendar_background{
+	background-color: white;
+}
 .event {
 	font-family: "Libre Reg";
 }
 
 .card,
-.card-title {
-	font-family: "Libre Reg";
+.card-title, .textAbout {
+	font-family: "Betty Noir";
+}
+.textAbout {
+	font-family: "Libre-Reg";
 }
 
 .articles {
@@ -242,7 +259,7 @@ body,
 
 /*NEWS SECTION*/
 .textHolder {
-	font-family: "Boldest Romance";
+	font-family: "Betty Noir";
 	letter-spacing: 1.5px;
 }
 
@@ -271,55 +288,59 @@ textarea,
 	margin-bottom: -1vh;
 }
 
+.question{
+	font-size: 20pt;
+}
 
 /*FOOTER*/
+
 .footerHeaders{
 	color:#fff;
-	font-size:21px;
+	font-size:12px;
 	text-transform: uppercase;
 	margin-top:5px;
 	letter-spacing:2px
   }
   .topFooter li {
-	padding: 10px;
+	padding: 5px;
   }
   .topFooter{
 	display:flex;
-	text-align: left;    
+	text-align: left;
 	left: 0;
 	bottom: 0;
-	width: 100%;
-	background-color: #26272b;
-	padding:45px 0 20px;
-	padding-bottom: 80px;
+	background-color: #323723;
+	padding:10px 0 20px;
+
 	font-size:20px;
 	line-height:24px;
-	color:#737373;
+	color:#9A9E8F;
 	font-family: "Lucida Console", sans-serif;
+
   }
   .topFooter h1{
-	padding:40px;
+
 	text-align: center;
 	color: #fff;
+	margin-top: 50px;
   }
   .topFooter table{
-	
-	margin-left: auto;
-	margin-right: auto;
+
+	margin: auto;
   }
-  
+
   .topFooter a,.topFooter a:active,.topFooter a:focus,.topFooter a:visited,.topFooter a:hover{
-	color:#737373;
+	color:#b3abab;
 	text-decoration: none;
   }
   .topFooter a:hover{
-	color:#29aafe;
+	color:#B96E08;
   }
-  
+
   .topFooter .fa {
 	padding: 10px;
-	font-size: 20px;
-	width: 20px;
+	font-size: 30px;
+	width: 30px;
 	text-align: center;
 	text-decoration: none;
 	margin: 5px 2px;
@@ -327,47 +348,70 @@ textarea,
 	background-color:#33353d;
 	color:#737373;
 	transition: transform .2s;
+	display: inline-table;
   }
   .topFooter .fa-facebook:hover {
 	background: #3B5998;
 	color:white;
-	transform: scale(1.1); 
+	transform: scale(1.1);
   }
   .topFooter .fa-twitter:hover {
 	background: #55ACEE;
 	color: white;
-	transform: scale(1.1); 
+	transform: scale(1.1);
   }
 
   .topFooter .fa-google:hover {
 	background: #dd4b39;
 	color: white;
-	transform: scale(1.1); 
+	transform: scale(1.1);
   }
 
   .topFooter .fa-linkedin:hover {
 	background: #007bb5;
 	color: white;
-	transform: scale(1.1); 
+	transform: scale(1.1);
   }
 
   .topFooter .fa-youtube:hover {
 	background: #bb0000;
 	color: white;
-	transform: scale(1.1); 
+	transform: scale(1.1);
   }
   .topFooter hr{
 	margin-left: auto;
-   
+
   }
   .bottomFooter{
 	display:flex;
-	text-align: left;    
-	padding: 20px;
+	text-align: left;
+	padding: 1vh;
 	width: 100%;
-	background-color: black;
+	background-color: #3A2C1F;
 	font-size:20px;
 	line-height:24px;
 	color:#737373;
 	font-family: "Lucida Console", sans-serif;
   }
+
+	.card-body{
+	background-color: #c8ae95;
+  }
+
+  .carousel-item{
+	background-color: rgba(58, 44, 31, 80%);
+
+  }
+  .card-body{
+	text-align: center;
+  }
+
+  #Search{
+	background-color: #a37230;
+	color: white;
+  }
+
+.answers{
+	font-family: "Libre Reg" !important;
+	background-color: #fae7d0;
+}
