@@ -71,4 +71,4 @@ git pull origin main
 
 
 
-**Ready to be a web developer, champ?**
+**Ready to be a real web developer, champ?**
