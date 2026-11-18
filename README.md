@@ -31,7 +31,7 @@ As a standard in web development, we will follow a step-by-step procedure in ord
 *Note for future employers viewing this project: we do not aim making issues and pull request here too formal and intimidate code development. This is for practice in collaborative development only.*
 
 
-### Part 1 - Github - Creating an Issue
+### Part 1: Github - Creating an Issue
 1. In this repository, navigate to the `Issue` tab.
 2. Click ``New Issue``
 3. Write your title describing what issue or enhancement you want to implement. (ex. "Improve mobile responsiveness of the website")
@@ -40,7 +40,7 @@ As a standard in web development, we will follow a step-by-step procedure in ord
 6. Click ``Create``
 
 
-### Part 2 - Code Editor - Implementing your feature
+### Part 2: Code Editor - Implementing your feature
 1. Ensure you are on a separate branch from ``main``.
 2. Pull from main first. Either from settings of your code editor or running the following command in your code editor terminal:
 ```bash
@@ -50,7 +50,7 @@ git pull origin main
 4. Implement your changes. Every significant change - do a commit.
 
 
-### Part 3 - Code Editor - Commits
+### Part 3: Code Editor - Commits
 1. Open your Git Panel in your Code Editor.
 2. Label your changes. Conventional commits are preferable. Example: "``feat: add new page for news article``"
     
@@ -59,6 +59,16 @@ git pull origin main
 4. Press ``push`` with the arrow up button
 5. Pull from main again then continue
 
-### Part 4 - Github - Pull Requests
-TBA - ask me
-   
+### Part 4: Github - Pull Requests
+1. In this repository, navigate to ``Pull Requests`` tab.
+2. Describe the progress you made (pushed) from your branch as a short title.
+3. You may bullet point all the changes you made in the body.
+4. Submit your pull request.
+
+### Part 5: Github and hosted web - Approval
+1. Wait for the lead programmer (me) to approve your changes.
+2. Once approved, your changes will be shipped out to the published web version.
+
+
+
+**Ready to be a web developer, champ?**
