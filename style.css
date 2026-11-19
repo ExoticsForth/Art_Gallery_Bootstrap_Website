@@ -305,7 +305,7 @@ textarea,
 	padding: 5px;
   }
   .topFooter{
-	display:flex;
+	display:block;
 	text-align: left;
 	left: 0;
 	bottom: 0;
@@ -324,9 +324,13 @@ textarea,
 	color: #fff;
 	margin-top: 50px;
   }
-  .topFooter table{
+  .topFooter table, .topFooter div{
 
 	margin: auto;
+  }
+
+  .topFooter .row{
+	background-color: transparent;
   }
 
   .topFooter a,.topFooter a:active,.topFooter a:focus,.topFooter a:visited,.topFooter a:hover{
