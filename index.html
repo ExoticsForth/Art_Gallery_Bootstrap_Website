@@ -18,16 +18,39 @@
             max-width: 1100px;
             margin: 40px auto;
         }
+        .responsive-banner {
+            width: 100%;
+            height: auto;
+            content: url('Assets/logotest_small.png');
+        }
+        .responsive-banner img {
+            width: 100%;
+            height: auto;
+        }
+        @media (min-width: 768px) {
+            .responsive-banner {
+                content: url('Assets/logotest.png');
+            }
+        }
     </style>
 
 </head>
 
 <body style="background-color: #c8ae95;">
     <!--HEADER-->
-    <nav class="navbar navbar-expand-sm p-3 navbar-dark" id="mynavbar">
+    <nav class="navbar navbar-expand-sm p-3 navbar-dark" id="navbarbg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="Assets/logotest.png"></a>
+            <a class="navbar-brand" href="index.html">
+                    <img src="Assets/logotest.png" class="responsive-banner">
+            </a>
+
+            <!-- Hamburger button (shown on mobile, hidden on desktop) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
             <div class="collapse navbar-collapse" id="mynavbar">
+            <!-- <div class="collapse navbar-collapse"> -->
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
@@ -56,6 +79,7 @@
         </div>
     </nav>
 
+    <!-- Topmost Carousel -->
     <div style="max-height: 720px; position: relative;" class="d-block w-100">
         <div id="demo" class="carousel slide" data-bs-ride="carousel">
 

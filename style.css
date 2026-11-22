@@ -24,6 +24,11 @@ body,
 	width: 100%;
 }
 
+#navbarbg {
+	background-color: #3a2c1f;
+	font-size: 20px;
+}
+
 #mynavbar {
 	background-color: #3a2c1f;
 	font-size: 20px;
