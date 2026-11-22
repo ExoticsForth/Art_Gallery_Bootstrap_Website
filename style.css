@@ -123,6 +123,17 @@ body,
 	font-size: 20pt;
 }
 
+.responsive-banner {
+	width: 100%;
+	height: auto;
+	content: url('Assets/logotest_small.png');
+}
+@media (min-width: 768px) {
+	.responsive-banner {
+		content: url('Assets/logotest.png');
+	}
+}
+
 #mynavbar li {
 	padding-inline: 5px;
 }
