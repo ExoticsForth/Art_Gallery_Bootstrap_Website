@@ -87,10 +87,20 @@
 
 	<body>
 
-		<nav class="navbar navbar-expand-sm p-3 navbar-dark" id="mynavbar">
+		<!--HEADER-->
+		<nav class="navbar navbar-expand-sm p-3 navbar-dark" id="navbarbg">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="index.html"><img src="Assets/logotest.png" /></a>
+				<a class="navbar-brand" href="index.html">
+						<img src="Assets/logotest.png" class="responsive-banner">
+				</a>
+
+				<!-- Hamburger button (shown on mobile, hidden on desktop) -->
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				
 				<div class="collapse navbar-collapse" id="mynavbar">
+				<!-- <div class="collapse navbar-collapse"> -->
 					<ul class="navbar-nav me-auto">
 						<li class="nav-item">
 							<a class="nav-link" href="index.html">Home</a>
@@ -112,8 +122,8 @@
 						</li>
 					</ul>
 					<form class="d-flex">
-						<input class="form-control me-2" type="text" placeholder="Search" />
-						<button class="btn" type="button" id="Search">Search</button>
+					<input class="form-control me-2" type="text" placeholder="Search">
+					<button class="btn" type="button" id="Search">Search</button>
 					</form>
 				</div>
 			</div>

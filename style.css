@@ -24,6 +24,11 @@ body,
 	width: 100%;
 }
 
+#navbarbg {
+	background-color: #3a2c1f;
+	font-size: 20px;
+}
+
 #mynavbar {
 	background-color: #3a2c1f;
 	font-size: 20px;
@@ -116,6 +121,17 @@ body,
 #mynavbar {
 	font-family: "Libre Reg";
 	font-size: 20pt;
+}
+
+.responsive-banner {
+	width: 100%;
+	height: auto;
+	content: url('Assets/logotest_small.png');
+}
+@media (min-width: 768px) {
+	.responsive-banner {
+		content: url('Assets/logotest.png');
+	}
 }
 
 #mynavbar li {
